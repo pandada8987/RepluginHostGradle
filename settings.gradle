@@ -1,3 +1,3 @@
-rootProject.name='Replugin-Host-Gradle-Horizontal'
+rootProject.name='RepluginHostGradle'
 include ':app'
 include ':HostGradle'

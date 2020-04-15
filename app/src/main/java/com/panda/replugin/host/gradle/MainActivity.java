@@ -1,8 +1,9 @@
-package com.panda.replugin_host_gradle_horizontal;
+package com.panda.replugin.host.gradle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
 
 public class MainActivity extends AppCompatActivity {
 
