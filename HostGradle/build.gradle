@@ -1,0 +1,47 @@
+apply plugin: 'groovy'
+//apply plugin: 'maven'
+apply plugin: 'com.novoda.bintray-release'
+
+//repositories {
+//    mavenCentral()
+//}
+
+////maven 库组id
+//group='com.qihoo360.replugin'
+////版本号
+//version='1.0.0'
+
+publish {
+    userOrg = 'ipanda'//组织名
+    groupId = 'com.replugin.host'//jcenter上的路径,bintray上创建Package时填写的Version control项
+    artifactId = 'HostGradle'//项目名称，bintray上创建Package时填写的Name项
+    publishVersion = '1.0.1'//版本号
+    desc = 'replugin host gradle'//描述，不重要
+    website = 'https://bintray.com/ipanda/maven'//网站，最好有，不重要
+}
+
+//uploadArchives {
+//    repositories {
+//        mavenDeployer {
+//            // 唯一标识
+//            pom.groupId = "com.qihoo360.replugin"
+//            // 项目名称
+//            pom.artifactId = "landscape"
+//            // 版本号
+//            pom.version = "1.0.0"
+//            //发布到本地仓库地址
+//            repository(url:uri('D:\\Android\\project\\SDKDemo\\gradlehorizontal'))
+//        }
+//    }
+//}
+
+dependencies {
+    implementation 'com.android.tools.build:gradle:3.0.0'
+    implementation 'org.json:json:20160212'
+    implementation 'org.codehaus.groovy:groovy:2.4.7'
+    implementation 'com.squareup:javapoet:1.10.0'
+    implementation gradleApi()
+    implementation localGroovy()
+    implementation 'com.google.gradle:osdetector-gradle-plugin:1.2.1'
+    implementation 'net.dongliu:apk-parser:2.2.0'
+}
