@@ -233,14 +233,14 @@ class RepluginConfig {
 
     /** 背景不透明的坑的数量 */
     def countNotTranslucentStandard = 6
-    def countNotTranslucentSingleTop = 2
+    def countNotTranslucentSingleTop = 3
     def countNotTranslucentSingleTask = 3
-    def countNotTranslucentSingleInstance = 2
+    def countNotTranslucentSingleInstance = 3
 
     /** 背景透明的坑的数量 */
-    def countTranslucentStandard = 2
-    def countTranslucentSingleTop = 2
-    def countTranslucentSingleTask = 2
+    def countTranslucentStandard = 5
+    def countTranslucentSingleTop = 3
+    def countTranslucentSingleTask = 3
     def countTranslucentSingleInstance = 3
 
     /** 宿主中声明的 TaskAffinity 的组数 */

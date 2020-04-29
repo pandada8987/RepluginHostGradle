@@ -10,7 +10,7 @@ def gitUrl = 'https://github.com/pandada8987/RepluginHostGradle.git' // Git仓�
 group = "com.replugin.host"
 
 //项目引用的版本号，比如implementation 'com.davis.ui.pulltorefresh:pulltorefresh:2.1.0'中的2.1.0就是这里配置的。
-version = "1.0.2"
+version = "1.0.0"
 
 install {
     repositories.mavenInstaller {
