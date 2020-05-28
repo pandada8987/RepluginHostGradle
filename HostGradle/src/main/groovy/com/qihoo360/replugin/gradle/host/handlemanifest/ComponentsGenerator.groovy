@@ -63,11 +63,16 @@ class ComponentsGenerator {
         } else {
             themeNTS = THEME_NTS_NOT_USE_APP_COMPAT
         }
-        println "${TAG} screenOrientation=${config.screenOrientation}"
-        if (config.screenOrientation == 1) {
-            oriV = "portrait";
-        } else {
-            oriV = "landscape";
+        switch (config.screenOrientation) {
+            case 0:
+                oriV = "behind";
+                break
+            case 1:
+                oriV = "portrait";
+                break
+            case 2:
+                oriV = "landscape";
+                break
         }
         def writer = new StringWriter()
         def xml = new MarkupBuilder(writer)

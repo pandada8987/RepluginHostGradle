@@ -55,7 +55,7 @@ public class RePluginHostConfigCreator implements IFileCreator {
     @Override
     String getFileContent() {
         return """
-package com.qihoo360.replugin.gen;
+package com.huotun.sdk.config;
 
 /**
  * 注意：此文件由插件化框架自动生成，请不要手动修改。
