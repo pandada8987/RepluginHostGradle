@@ -40,7 +40,7 @@ class ComponentsGenerator {
     def static final expV = 'false'
 
     def static final ori = 'android:screenOrientation'
-    def static oriV = 'landscape'
+    def static oriV = 'behind'
 
     def static final theme = 'android:theme'
     def static final themeTS = '@android:style/Theme.Translucent.NoTitleBar'
@@ -114,7 +114,7 @@ class ComponentsGenerator {
                 activity(
                         "${name}": "${applicationID}.${infix}N1NRTS${it}",
                         "${cfg}": "${cfgV}",
-                        "${exp}": "${expV}",
+                        
                         "${ori}": "${oriV}",
                         "${theme}": "${themeTS}")
             }
@@ -122,7 +122,7 @@ class ComponentsGenerator {
                 activity(
                         "${name}": "${applicationID}.${infix}N1STPTS${it}",
                         "${cfg}": "${cfgV}",
-                        "${exp}": "${expV}",
+                        
                         "${ori}": "${oriV}",
                         "${theme}": "${themeTS}",
                         "${launchMode}": "singleTop")
@@ -131,7 +131,7 @@ class ComponentsGenerator {
                 activity(
                         "${name}": "${applicationID}.${infix}N1STTS${it}",
                         "${cfg}": "${cfgV}",
-                        "${exp}": "${expV}",
+                        
                         "${ori}": "${oriV}",
                         "${theme}": "${themeTS}",
                         "${launchMode}": "singleTask")
@@ -140,7 +140,7 @@ class ComponentsGenerator {
                 activity(
                         "${name}": "${applicationID}.${infix}N1SITS${it}",
                         "${cfg}": "${cfgV}",
-                        "${exp}": "${expV}",
+                        
                         "${ori}": "${oriV}",
                         "${theme}": "${themeTS}",
                         "${launchMode}": "singleInstance")
@@ -151,7 +151,7 @@ class ComponentsGenerator {
                 activity(
                         "${name}": "${applicationID}.${infix}N1NRNTS${it}",
                         "${cfg}": "${cfgV}",
-                        "${exp}": "${expV}",
+                        
                         "${ori}": "${oriV}",
                         "${theme}": "${themeNTS}")
             }
@@ -159,7 +159,7 @@ class ComponentsGenerator {
                 activity(
                         "${name}": "${applicationID}.${infix}N1STPNTS${it}",
                         "${cfg}": "${cfgV}",
-                        "${exp}": "${expV}",
+                        
                         "${ori}": "${oriV}",
                         "${theme}": "${themeNTS}",
                         "${launchMode}": "singleTop")
@@ -168,7 +168,7 @@ class ComponentsGenerator {
                 activity(
                         "${name}": "${applicationID}.${infix}N1STNTS${it}",
                         "${cfg}": "${cfgV}",
-                        "${exp}": "${expV}",
+                        
                         "${ori}": "${oriV}",
                         "${theme}": "${themeNTS}",
                         "${launchMode}": "singleTask",)
@@ -177,7 +177,7 @@ class ComponentsGenerator {
                 activity(
                         "${name}": "${applicationID}.${infix}N1SINTS${it}",
                         "${cfg}": "${cfgV}",
-                        "${exp}": "${expV}",
+                        
                         "${ori}": "${oriV}",
                         "${theme}": "${themeNTS}",
                         "${launchMode}": "singleInstance")
@@ -190,7 +190,7 @@ class ComponentsGenerator {
                     activity(
                             "${name}": "${applicationID}.${infix}N1TA${i}NRTS${j}",
                             "${cfg}": "${cfgV}",
-                            "${exp}": "${expV}",
+                            
                             "${ori}": "${oriV}",
                             "${theme}": "${themeTS}",
                             "${task}": ":t${i}")
@@ -199,7 +199,7 @@ class ComponentsGenerator {
                     activity(
                             "${name}": "${applicationID}.${infix}N1TA${i}STPTS${j}",
                             "${cfg}": "${cfgV}",
-                            "${exp}": "${expV}",
+                            
                             "${ori}": "${oriV}",
                             "${theme}": "${themeTS}",
                             "${task}": ":t${i}",
@@ -209,7 +209,7 @@ class ComponentsGenerator {
                     activity(
                             "${name}": "${applicationID}.${infix}N1TA${i}STTS${j}",
                             "${cfg}": "${cfgV}",
-                            "${exp}": "${expV}",
+                            
                             "${ori}": "${oriV}",
                             "${theme}": "${themeTS}",
                             "${task}": ":t${i}",
@@ -220,7 +220,7 @@ class ComponentsGenerator {
                     activity(
                             "${name}": "${applicationID}.${infix}N1TA${i}NRNTS${j}",
                             "${cfg}": "${cfgV}",
-                            "${exp}": "${expV}",
+                            
                             "${ori}": "${oriV}",
                             "${theme}": "${themeNTS}",
                             "${task}": ":t${i}")
@@ -229,7 +229,7 @@ class ComponentsGenerator {
                     activity(
                             "${name}": "${applicationID}.${infix}N1TA${i}STPNTS${j}",
                             "${cfg}": "${cfgV}",
-                            "${exp}": "${expV}",
+                            
                             "${ori}": "${oriV}",
                             "${theme}": "${themeNTS}",
                             "${task}": ":t${i}",
@@ -239,7 +239,7 @@ class ComponentsGenerator {
                     activity(
                             "${name}": "${applicationID}.${infix}N1TA${i}STNTS${j}",
                             "${cfg}": "${cfgV}",
-                            "${exp}": "${expV}",
+                            
                             "${ori}": "${oriV}",
                             "${theme}": "${themeNTS}",
                             "${task}": ":t${i}",
@@ -272,7 +272,6 @@ class ComponentsGenerator {
                     activity(
                             "${name}": "${applicationID}.${infix}P${p}NRTS${it}",
                             "${cfg}": "${cfgV}",
-                            "${exp}": "${expV}",
                             "${ori}": "${oriV}",
                             "${theme}": "${themeTS}",
                             "${process}": ":p${p}")
@@ -281,7 +280,6 @@ class ComponentsGenerator {
                     activity(
                             "${name}": "${applicationID}.${infix}P${p}STPTS${it}",
                             "${cfg}": "${cfgV}",
-                            "${exp}": "${expV}",
                             "${ori}": "${oriV}",
                             "${theme}": "${themeTS}",
                             "${process}": ":p${p}",
@@ -291,7 +289,6 @@ class ComponentsGenerator {
                     activity(
                             "${name}": "${applicationID}.${infix}P${p}STTS${it}",
                             "${cfg}": "${cfgV}",
-                            "${exp}": "${expV}",
                             "${ori}": "${oriV}",
                             "${theme}": "${themeTS}",
                             "${process}": ":p${p}",
@@ -301,7 +298,6 @@ class ComponentsGenerator {
                     activity(
                             "${name}": "${applicationID}.${infix}P${p}SITS${it}",
                             "${cfg}": "${cfgV}",
-                            "${exp}": "${expV}",
                             "${ori}": "${oriV}",
                             "${theme}": "${themeTS}",
                             "${process}": ":p${p}",
@@ -311,7 +307,6 @@ class ComponentsGenerator {
                     activity(
                             "${name}": "${applicationID}.${infix}P${p}NRNTS${it}",
                             "${cfg}": "${cfgV}",
-                            "${exp}": "${expV}",
                             "${ori}": "${oriV}",
                             "${theme}": "${themeNTS}",
                             "${process}": ":p${p}")
@@ -320,7 +315,6 @@ class ComponentsGenerator {
                     activity(
                             "${name}": "${applicationID}.${infix}P${p}STPNTS${it}",
                             "${cfg}": "${cfgV}",
-                            "${exp}": "${expV}",
                             "${ori}": "${oriV}",
                             "${theme}": "${themeNTS}",
                             "${process}": ":p${p}",
@@ -330,7 +324,6 @@ class ComponentsGenerator {
                     activity(
                             "${name}": "${applicationID}.${infix}P${p}STNTS${it}",
                             "${cfg}": "${cfgV}",
-                            "${exp}": "${expV}",
                             "${ori}": "${oriV}",
                             "${theme}": "${themeNTS}",
                             "${process}": ":p${p}",
@@ -340,7 +333,6 @@ class ComponentsGenerator {
                     activity(
                             "${name}": "${applicationID}.${infix}P${p}SINTS${it}",
                             "${cfg}": "${cfgV}",
-                            "${exp}": "${expV}",
                             "${ori}": "${oriV}",
                             "${theme}": "${themeNTS}",
                             "${process}": ":p${p}",
@@ -353,7 +345,6 @@ class ComponentsGenerator {
                         activity(
                                 "${name}": "${applicationID}.${infix}P${p}TA${i}NRTS${j}",
                                 "${cfg}": "${cfgV}",
-                                "${exp}": "${expV}",
                                 "${ori}": "${oriV}",
                                 "${theme}": "${themeTS}",
                                 "${process}": ":p${p}",
@@ -363,7 +354,6 @@ class ComponentsGenerator {
                         activity(
                                 "${name}": "${applicationID}.${infix}P${p}TA${i}STPTS${j}",
                                 "${cfg}": "${cfgV}",
-                                "${exp}": "${expV}",
                                 "${ori}": "${oriV}",
                                 "${theme}": "${themeTS}",
                                 "${launchMode}": "singleTop",
@@ -374,7 +364,6 @@ class ComponentsGenerator {
                         activity(
                                 "${name}": "${applicationID}.${infix}P${p}TA${i}STTS${j}",
                                 "${cfg}": "${cfgV}",
-                                "${exp}": "${expV}",
                                 "${ori}": "${oriV}",
                                 "${theme}": "${themeTS}",
                                 "${launchMode}": "singleTask",
@@ -385,7 +374,6 @@ class ComponentsGenerator {
                         activity(
                                 "${name}": "${applicationID}.${infix}P${p}TA${i}NRNTS${j}",
                                 "${cfg}": "${cfgV}",
-                                "${exp}": "${expV}",
                                 "${ori}": "${oriV}",
                                 "${theme}": "${themeNTS}",
                                 "${process}": ":p${p}",
@@ -395,7 +383,6 @@ class ComponentsGenerator {
                         activity(
                                 "${name}": "${applicationID}.${infix}P${p}TA${i}STPNTS${j}",
                                 "${cfg}": "${cfgV}",
-                                "${exp}": "${expV}",
                                 "${ori}": "${oriV}",
                                 "${theme}": "${themeNTS}",
                                 "${launchMode}": "singleTop",
@@ -406,7 +393,6 @@ class ComponentsGenerator {
                         activity(
                                 "${name}": "${applicationID}.${infix}P${p}TA${i}STNTS${j}",
                                 "${cfg}": "${cfgV}",
-                                "${exp}": "${expV}",
                                 "${ori}": "${oriV}",
                                 "${theme}": "${themeNTS}",
                                 "${launchMode}": "singleTask",
